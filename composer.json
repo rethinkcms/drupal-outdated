@@ -1,0 +1,30 @@
+{
+    "name": "rethinkcms/drupal-outdated",
+    "description": "Checks if packages are up to date in Drupal.",
+    "type": "composer-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Joseph Zhao",
+            "email": "pandaski@outlook.com.au"
+        }
+    ],
+    "require": {
+        "composer-plugin-api": "^1.0 || ^2.0"
+    },
+    "require-dev": {
+        "composer/composer": "^1.0 || ^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "RethinkCMS\\Composer\\Plugin\\DrupalOutdated\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "class": "RethinkCMS\\Composer\\Plugin\\DrupalOutdated\\Plugin"
+    },
+    "minimum-stability": "dev"
+}
